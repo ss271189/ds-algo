@@ -1,4 +1,4 @@
-package com.ss.practice.problem;
+package com.ss.practice.array;
 
 public class ArrayRotation  {
 
