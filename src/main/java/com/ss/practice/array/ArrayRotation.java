@@ -1,5 +1,7 @@
 package com.ss.practice.array;
 
+
+
 public class ArrayRotation  {
 
 
@@ -21,7 +23,7 @@ public class ArrayRotation  {
 
     public static void main(String[] args) {
         int arr[]={1,2,3,4,5,6,7};
-        int arrNew[]=rotateArray(arr,0);
+        int arrNew[]=rotateArray(arr,5);
         for(int j=0;j<arrNew.length;j++)
         System.out.print(arrNew[j]+" ");
         System.out.println();
