@@ -6,7 +6,7 @@ import java.util.Set;
 public class LongestSubstringWithoutRepeat {
     //Sliding window technique
     public static void main(String[] args) {
-        int len=longestSubstring("pwwkew");
+        int len=longestSubstring("ABDEFGABEF");
         System.out.println(len);
     }
 
