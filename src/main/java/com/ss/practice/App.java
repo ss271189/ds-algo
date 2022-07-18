@@ -3,7 +3,13 @@
  */
 package com.ss.practice;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.function.Supplier;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class App {
     public String getGreeting() {
@@ -12,7 +18,30 @@ public class App {
 
     public static void main(String[] args) {
         
-        System.out.println(new App().getGreeting());
+        //System.out.println(new App().getGreeting());
+
+        Supplier s= ()-> LocalDateTime.now();
+
+        System.out.println(s.get());
+
+
+        List<Emp> list= new ArrayList<>();
+        list.stream().filter(e-> e.getSal()>20000).collect(Collectors.toList());
+
+    }
+
+
+    class Emp {
+        public int getSal() {
+            return sal;
+        }
+
+        public void setSal(int sal) {
+            this.sal = sal;
+        }
+
+        int sal;
+
     }
 }
 
